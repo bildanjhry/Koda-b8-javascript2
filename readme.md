@@ -25,9 +25,10 @@ assignMax@{shape: rect, label: "max = arr[i]"}
 outputMin@{shape: lean-r, label: '"Nilai Min = {min}"'}
 outputMax@{shape: lean-r, label: '"Nilai Max = {max}"'}
 outputAvg@{shape: lean-r, label: '"Nilai Avg = {avg}"'}
+fin@{shape: double-circle, label: "stop"}
 
 start-->inp-->max-->min-->res-->init-->con
-con-- No -->avg-->outputMin-->outputMax-->outputAvg
+con-- No --->avg-->outputMin-->outputMax-->outputAvg-->fin
 con-- Yes -->conMin-- Yes -->assignMin-->conMax
 conMin-- No -->conMax-- Yes -->assignMax-->ctr-->con
 
